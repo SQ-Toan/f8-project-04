@@ -76,6 +76,7 @@ textarea {
     background: #fffaf5;
     border: 1px solid #fd5056;
     border-radius: 50%;
+    box-shadow: 4px 3px 10px -1px #bf290066;
 }
 .btn__icon::after {
     content: "";
