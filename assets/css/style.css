@@ -723,11 +723,40 @@ textarea {
 .staff-item {
     text-align: center;
 }
+
+.staff-item:nth-child(1) .staff-item__wrap::after {
+    content: url("../icon/staff-decor-01.svg");
+}
+
+.staff-item:nth-child(2) .staff-item__wrap::before {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+.staff-item:nth-child(2) .staff-item__wrap::after {
+    content: url("../icon/staff-decor-02.svg");
+}
+
+.staff-item:nth-child(3) .staff-item__wrap::before {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+.staff-item:nth-child(3) .staff-item__wrap::after {
+    content: url("../icon/staff-decor-03.svg");
+}
+
+.staff-item:nth-child(4) .staff-item__wrap::before {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+.staff-item:nth-child(4) .staff-item__wrap::after {
+    content: url("../icon/staff-decor-04.svg");
+}
+.staff-item:nth-child(even) .staff-item__wrap::after {
+    top: 16px;
+    bottom: initial;
+}
+
 .staff-item__wrap {
     position: relative;
     margin: 0 16px;
     border-radius: 130px;
-    overflow: hidden;
 }
 .staff-item__wrap::before {
     content: "";
@@ -740,11 +769,18 @@ textarea {
     background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
     border-radius: inherit;
 }
+.staff-item__wrap::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
 .staff-item__img {
     display: block;
     position: relative;
     z-index: 1;
     width: 100%;
+    border-radius: inherit;
 }
 
 .staff-item__title {
