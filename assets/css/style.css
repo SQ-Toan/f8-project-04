@@ -263,7 +263,7 @@ textarea {
 }
 
 .hero__heading {
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 6.6rem;
     font-weight: 800;
     line-height: 1.15;
@@ -344,7 +344,7 @@ textarea {
     position: relative;
 }
 .about__label {
-    font-family: Sora, sans-serif;
+    font-family: "Sora", sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1;
@@ -402,7 +402,7 @@ textarea {
     text-align: center;
 }
 .about__card-title {
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 1;
@@ -503,7 +503,10 @@ textarea {
     margin-bottom: 50px;
 }
 
-.about-tab__list,
+.about-tab__list {
+    display: inline-flex;
+    align-items: center;
+}
 .about-tab__item {
     display: flex;
     align-items: center;
@@ -540,7 +543,7 @@ textarea {
     width: 20px;
 }
 .about-tab__title {
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1;
@@ -576,4 +579,82 @@ textarea {
 .about-tab__contents-more::after {
     height: 1.5px;
     opacity: 1;
+}
+
+.service {
+    margin-top: 190px;
+    background-color: #fff6ed;
+    padding: 68px 0 100px;
+}
+.service__top {
+    text-align: center;
+}
+.service__desc {
+    margin-bottom: 15px;
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #5e6085;
+}
+.service__body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.service__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.service-card {
+    width: 294px;
+    padding: 30px 28px;
+    background: #ffffff;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+.service-card__heading {
+    position: relative;
+    padding-left: 12px;
+    font-family: "Sora", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #000958;
+}
+.service-card__heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin-right: 12px;
+    width: 2px;
+    height: 22px;
+
+    background: linear-gradient(-180deg, #ff5b2e 0.39%, #ffa187 100.29%);
+    border-radius: 10px;
+}
+.service-card__desc {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+.service-card__more {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+
+    margin-top: 24px;
+    padding: 6px 0;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #34396a;
+}
+.service-card__more::after {
+    content: url("../icon/arrow-up-right.svg");
+    margin-top: 2px;
 }
