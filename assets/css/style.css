@@ -725,32 +725,31 @@ textarea {
 }
 
 .staff-item:nth-child(1) .staff-item__wrap::after {
-    content: url("../icon/staff-decor-01.svg");
+    background-image: url("../icon/staff-decor-01.svg");
 }
 
 .staff-item:nth-child(2) .staff-item__wrap::before {
     background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
 }
 .staff-item:nth-child(2) .staff-item__wrap::after {
-    content: url("../icon/staff-decor-02.svg");
+    background-image: url("../icon/staff-decor-02.svg");
 }
 
 .staff-item:nth-child(3) .staff-item__wrap::before {
     background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
 }
 .staff-item:nth-child(3) .staff-item__wrap::after {
-    content: url("../icon/staff-decor-03.svg");
+    background-image: url("../icon/staff-decor-03.svg");
 }
 
 .staff-item:nth-child(4) .staff-item__wrap::before {
     background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
 }
 .staff-item:nth-child(4) .staff-item__wrap::after {
-    content: url("../icon/staff-decor-04.svg");
+    background-image: url("../icon/staff-decor-04.svg");
 }
 .staff-item:nth-child(even) .staff-item__wrap::after {
-    top: 16px;
-    bottom: initial;
+    background-position: 0 16px;
 }
 
 .staff-item__wrap {
@@ -765,15 +764,24 @@ textarea {
     right: 0;
     bottom: 0;
 
-    height: 266px;
+    width: 100%;
+    height: 94%;
     background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
     border-radius: inherit;
 }
 .staff-item__wrap::after {
+    content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+
+    width: calc(100% + 36px);
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 .staff-item__img {
     display: block;
