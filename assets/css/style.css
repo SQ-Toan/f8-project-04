@@ -1082,3 +1082,27 @@ textarea {
     background: #ff5b2e;
     cursor: pointer;
 }
+
+/* Blog */
+.blog {
+    padding: 77px 0;
+}
+
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__info {
+    width: 350px;
+    margin-right: 73px;
+}
+.blog__desc {
+    margin-top: 0;
+}
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    border-color: rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+}
