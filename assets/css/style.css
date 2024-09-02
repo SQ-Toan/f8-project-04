@@ -960,3 +960,46 @@ textarea {
     content: url("/assets/icon/Check\ \(1\).svg");
     margin-right: 14px;
 }
+
+/* Review */
+.review {
+    padding: 53px 0;
+}
+.review__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 44px;
+}
+.review__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border: 1.5px solid #ffd1c4;
+    border-radius: 50%;
+    color: #ff5b2e;
+    background: transparent;
+}
+
+.review__control:hover {
+    color: #fff;
+    cursor: pointer;
+    background: #ff5b2e;
+    border-color: #ff5b2e;
+}
+
+.review-item {
+    display: flex;
+}
+
+.review-item__media {
+    flex-shrink: 0;
+    width: 274px;
+}
+.review-item__img {
+    display: block;
+    width: 100%;
+}
