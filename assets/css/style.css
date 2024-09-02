@@ -60,16 +60,15 @@ textarea {
     cursor: pointer;
 }
 .btn--primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 .btn__icon {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
     height: 20px;
     margin-left: 10px;
@@ -894,4 +893,70 @@ textarea {
     position: absolute;
     top: -10px;
     right: -112px;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 56px;
+    column-gap: 44px;
+}
+.pricing__list--small {
+    width: 994px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pricing-item {
+    padding: 30px 28px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 44px 0px #c36c160f;
+    background: #fff;
+}
+
+.pricing-item__type {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #ff5b2e;
+}
+.pricing-item__heading {
+    margin-top: 8px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #3f4065;
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    font-family: Sora, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000958;
+}
+
+.pricing-item__btn {
+    --height: 44px;
+
+    margin-top: 22px;
+    width: 100%;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    background: transparent;
+    color: #ff5b2e;
+}
+.pricing-item__list {
+    margin-top: 24px;
+}
+.pricing-item__item {
+    display: flex;
+    margin-top: 18px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #656689;
+}
+.pricing-item__item::before {
+    content: url("/assets/icon/Check\ \(1\).svg");
+    margin-right: 14px;
 }
